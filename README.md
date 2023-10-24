@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Facebook_Clone_01](https://github.com/BoaBer/FacebookClone/assets/132903600/ac115d46-c324-49f5-ab25-305e2139e294)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
