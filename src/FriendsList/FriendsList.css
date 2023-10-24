@@ -1,0 +1,78 @@
+.friendsList {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  height: 95vh;
+  overflow: scroll;
+}
+
+.friendsList::-webkit-scrollbar {
+  display: none;
+}
+
+.friendsList__top {
+  padding: 20px 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friendsList__top > p {
+  color: rgb(96, 95, 95);
+  font-size: 25px;
+}
+
+.friendsList__topIcons > ion-icon {
+  color: rgb(96, 95, 95);
+  margin-right: 5px;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.friendsList__topIcons > ion-icon:hover {
+  background-color: rgb(208, 208, 208);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.frindsList__bottom {
+  display: flex;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.friend:hover {
+  background-color: rgb(208, 208, 208);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.friend > h4 {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.friend > img {
+  margin: 12px 5px;
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: 12px;
+  left: 32px;
+}
+
+.icon > ion-icon {
+  z-index: 10;
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./Header/Header.js";
+import Sidebar from "./Sidebar/Sidebar.js";
+import Feed from "./Feed/Feed.js";
+import FriendsList from "./FriendsList/FriendsList";
 
-function App() {
+export default function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
+  // BEM naming convention
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+
+      <div className="app__body">
+        <Sidebar />
+        <Feed />
+        <FriendsList style={width > 1130 ? {} : { display: "none" }} />
+      </div>
     </div>
   );
 }
-
-export default App;
