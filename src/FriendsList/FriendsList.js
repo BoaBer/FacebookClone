@@ -1,4 +1,5 @@
 import "./FriendsList.css";
+import React from "react";
 
 let list = [
   { name: "Chaim Harvey", isActive: false },

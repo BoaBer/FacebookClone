@@ -3,6 +3,7 @@ import MessageSender from "./MessageSender/MessageSender";
 import StoryReel from "./StoryReel/StoryReel.js";
 import Post from "./Post/Post";
 import { useState } from "react";
+import React from "react";
 
 const posts = [
   {

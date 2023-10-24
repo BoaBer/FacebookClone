@@ -1,4 +1,5 @@
 import "./SidebarRow.css";
+import React from "react";
 
 export default function SidebarRow({ src, icon, children }) {
   return (

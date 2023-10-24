@@ -1,3 +1,4 @@
+import React from "react";
 import "./Post.css";
 
 export default function Post({ profilePic, image, username, message, date }) {

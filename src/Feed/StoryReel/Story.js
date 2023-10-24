@@ -1,4 +1,5 @@
 import "./Story.css";
+import React from "react";
 
 export default function Story({ image, profileSrc, title }) {
   return (

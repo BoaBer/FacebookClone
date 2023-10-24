@@ -1,5 +1,6 @@
 import "./StoryReel.css";
 import Story from "./Story.js";
+import React from "react";
 
 export default function StoryReel() {
   return (
